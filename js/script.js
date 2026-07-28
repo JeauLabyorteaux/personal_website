@@ -6,10 +6,14 @@ const theme_toggle_button = document.createElement('button');
 // Single, robust handler for any "Back to Home" button
 const backButton = document.getElementById('back-to-home') //|| document.getElementById('resume-back');
 
-// Home Page Project Cards Redirection (only runs if the elements exist on the landing page)
+// Project Page Project Cards Redirection (only runs if the elements exist on the landing page)
 const visit_c3po = document.getElementById('c3po_project');
 const visit_ss = document.getElementById('score_send');
 const visit_movie = document.getElementById('movie_project');
+
+// Project Page STUDENT Project Cards Redirection (only runs if the elements exist on the landing page)
+const visit_r_project = document.getElementById('r_project');
+const visit_y_project = document.getElementById('y_project');
 
 // Project Page Links
 theme_toggle_button.className = "theme-toggle";
@@ -45,5 +49,17 @@ if (visit_ss) {
 if (visit_movie) {
     visit_movie.addEventListener('click', function() {
         window.location.href = 'movie_search.html';
+    });
+}
+
+if (visit_r_project) {
+    visit_r_project.addEventListener('click', function() {
+        window.location.href = 'r_project_here.html';
+    });
+}
+
+if (visit_y_project) {
+    visit_y_project.addEventListener('click', function() {
+        window.location.href = 'y_project_here.html';
     });
 }
