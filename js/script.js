@@ -4,7 +4,7 @@ const body = document.body;
 const theme_toggle_button = document.createElement('button');
 
 // Single, robust handler for any "Back to Home" button
-const backButton = document.getElementById('back-to-home') || document.getElementById('resume-back');
+const backButton = document.getElementById('back-to-home') //|| document.getElementById('resume-back');
 
 // Home Page Project Cards Redirection (only runs if the elements exist on the landing page)
 const visit_c3po = document.getElementById('c3po_project');
