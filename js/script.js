@@ -12,8 +12,8 @@ const visit_ss = document.getElementById('score_send');
 const visit_movie = document.getElementById('movie_project');
 
 // Project Page STUDENT Project Cards Redirection (only runs if the elements exist on the landing page)
-const visit_r_project = document.getElementById('r_project');
-const visit_y_project = document.getElementById('y_project');
+//const visit_r_project = document.getElementById('r_project');
+//const visit_y_project = document.getElementById('y_project');
 
 // Project Page Links
 theme_toggle_button.className = "theme-toggle";
@@ -52,6 +52,7 @@ if (visit_movie) {
     });
 }
 
+/*
 if (visit_r_project) {
     visit_r_project.addEventListener('click', function() {
         window.location.href = 'r_project_here.html';
@@ -63,3 +64,4 @@ if (visit_y_project) {
         window.location.href = 'y_project_here.html';
     });
 }
+*/
