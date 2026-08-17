@@ -3,7 +3,7 @@ name: Deploy to Lightsail
 on:
   push:
     branches:
-      - master  # This ensures it only deploys when you push to the main branch
+      - master  # ensure it only deploys when pushed to the main branch
 
 jobs:
   deploy:
@@ -15,9 +15,9 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.LIGHTSAIL_IP }} # Your Static IP added as a Secret
+          host: ${{ secrets.LIGHTSAIL_IP }} # Static IP added as a Secret
           username: bitnami # Default user for Lightsail Nginx
-          key: ${{ secrets.LIGHTSAIL_SSH_KEY }} # The .pem key you just added
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }} # .pem key 
           script: |
             cd /opt/bitnami/nginx/html
             git pull origin master
